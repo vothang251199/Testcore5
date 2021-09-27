@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="D:\121_HK1_2021_22\Do_An\Testcore5\Index.cshtml" Link="Index.cshtml" />
+  </ItemGroup>
+
 </Project>
