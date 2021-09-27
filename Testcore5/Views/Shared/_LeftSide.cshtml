@@ -1,0 +1,69 @@
+﻿<aside class="left-sidebar bg-sidebar">
+    <div id="sidebar" class="sidebar sidebar-with-footer">
+        <!-- Aplication Brand -->
+        <div class="app-brand">
+            <a href="#">
+                @*<svg class="brand-icon"
+                         xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid"
+                         width="30"
+                         height="33"
+                         viewBox="0 0 30 33">
+                        <g fill="none" fill-rule="evenodd">
+                            <path class="logo-fill-blue"
+                                  fill="#7DBCFF"
+                                  d="M0 4v25l8 4V0zM22 4v25l8 4V0z" />
+                            <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z" />
+                        </g>
+                    </svg>*@
+                <img src="~/Assets/img/icon.png" style="width:40px; height:35px" />
+                <span class="brand-name" style="font-family:Cambria; font-size:x-large"> Trang Admin</span>
+            </a>
+        </div>
+        <!-- begin sidebar scrollbar -->
+        <div class="sidebar-scrollbar">
+
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+
+                <li class="has-sub active expand">
+                    <a href="@Url.Action("Index", "DuyetHoSo/Index")">
+                        <i class="mdi mdi-clipboard-check-outline"></i>
+                        <span class="nav-text">Duyệt Hồ Sơ</span>
+                    </a>
+
+                </li>
+
+                <li class="has-sub active expand ">
+                    <a href="@Url.Action("Index", "DoiMatKhau")">
+                        <i class="mdi mdi-shield-key-outline"></i>
+                        <span class="nav-text">Đổi Mật Khẩu</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <hr class="separator" />
+        <div class="sidebar-footer">
+            <div class="sidebar-footer-content">
+                <h6 class="text-uppercase">
+                    Cpu Uses <span class="float-right">40%</span>
+                </h6>
+                <div class="progress progress-xs">
+                    <div class="progress-bar active"
+                         style="width: 40%;"
+                         role="progressbar"></div>
+                </div>
+                <h6 class="text-uppercase">
+                    Memory Uses <span class="float-right">65%</span>
+                </h6>
+                <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-warning"
+                         style="width: 65%;"
+                         role="progressbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
