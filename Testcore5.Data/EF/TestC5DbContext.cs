@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Testcore5.Data.Configurations;
 using Testcore5.Data.Entities;
+using Testcore5.Data.Extensions;
 
 namespace Testcore5.Data.EF
 {
@@ -18,6 +19,7 @@ namespace Testcore5.Data.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Configura using Fluent API
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             modelBuilder.ApplyConfiguration(new CartConfiguration());
@@ -31,6 +33,9 @@ namespace Testcore5.Data.EF
             modelBuilder.ApplyConfiguration(new ProductTranslationConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
+
+            //Data seeding
+            modelBuilder.Seed();
 
             //base.OnModelCreating(modelBuilder);
         }
